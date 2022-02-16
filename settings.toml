@@ -1,0 +1,14 @@
+[default]
+
+
+[test]
+SECRET_KEY = "test"
+SQLALCHEMY_DATABASE_URI = "sqlite:///test.db"
+
+[development]
+
+
+[production]
+
+
+[docker]
