@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "password-generator"
+version = "0.1.0"
+description = "password generation application"
+authors = ["fredsonchaves07"]
+license = "APACHE"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Flask = "^2.0.3"
+dynaconf = "^3.1.7"
+setuptools = "^60.9.2"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+pep8 = "^1.7.1"
+autopep8 = "^1.6.0"
+flake8 = "^4.0.1"
+pylint = "^2.12.2"
+pytest = "^7.0.1"
+pytest-flask = "^1.2.0"
+ipython = "^8.0.1"
+python-dotenv = "^0.19.2"
+flask-shell-ipython = "^0.4.1"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | \.vscode
+  | migrations
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
